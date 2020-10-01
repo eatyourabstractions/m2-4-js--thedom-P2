@@ -13,7 +13,15 @@
 
 function isPalindrome(theString) {
   // Your code here
+  if(typeof theString !== "string"){
+    return undefined
+  }
+  return theString.split("").reverse().join("") === theString
+
 }
+console.log(
+  isPalindrome("deified")
+)
 
 // Part 2 - Test
 // --------------

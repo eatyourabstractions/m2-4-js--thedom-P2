@@ -12,8 +12,15 @@
 
 const count = (arr, key) => {
   // Insert missing solution please
+  if(!Array.isArray(arr)){
+    return undefined
+  }
+  return arr.reduce((acc,curr) => acc + curr[key], 0)
 };
 
+console.log(
+  count([{ name: "Bob", amount: 100 }, { name: "Josie", amount: 45 }], 'amount')
+)
 // Part 2 - Test
 // --------------
 // Test your function.

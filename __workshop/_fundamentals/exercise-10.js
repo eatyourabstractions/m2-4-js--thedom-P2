@@ -26,9 +26,17 @@
 // If you struggle with it, set it aside. In a few weeks, you might find the
 // solution comes more quickly :)
 
-const uniqueElements = (arr1, arr2) => {
+const uniqueElements = (arrA, arrB) => {
   // Your code here
+  if(!Array.isArray(arrA) || !Array.isArray(arrB)){
+    return undefined
+  }
+  return [...new Set([...arrA.filter(x => !arrB.includes(x)), ...arrB.filter(x => !arrA.includes(x))])]
 };
+
+console.log(
+  uniqueElements([1,2,3], [3,2,1])
+)
 
 // Part 2 - Test
 // --------------

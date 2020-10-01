@@ -15,6 +15,10 @@
 
 const addValues = (arr, obj) => {
   // Insert missing solution please
+  if(!Array.isArray(arr)){
+    return undefined
+  }
+  return arr.map(el => ({...el, ...obj}))
 };
 
 // Part 2 - Test

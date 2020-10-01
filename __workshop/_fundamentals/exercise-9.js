@@ -10,7 +10,23 @@
 
 const wrapAfter40Chars = (paragraph) => {
   // Your code here
+    let letters = [],
+    i = 0;
+    let step = 40
+    while (i < paragraph.length) {
+      letters.push(paragraph.slice(i,  i+= step));
+    }
+    return letters.map(line => line.trimStart()).join('\n');
 };
+let str = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+
+console.log(
+  wrapAfter40Chars(str)
+)
+
+console.log(
+ Math.round(str.length / 40)
+)
 
 // Part 2 - Test
 // --------------

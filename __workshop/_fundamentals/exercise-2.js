@@ -10,8 +10,15 @@
 
 const redacted = (arr) => {
   // Insert missing solution please
+  if(!Array.isArray(arr)){
+    return undefined
+  }
+  return arr.map(v => (typeof v === "string") ? 'redacted' : v)
 };
 
+console.log(
+redacted([1,false, 'bacon'])
+)
 // Part 2 - Test
 // --------------
 // Test your function.

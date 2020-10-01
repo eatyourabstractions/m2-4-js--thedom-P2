@@ -12,6 +12,9 @@ test("Exercise 10", () => {
     5,
   ]);
   // add more tests here...
+  expect(uniqueElements([1,2,3], [3,2,1])).toStrictEqual([]);
+  expect(uniqueElements(2)).toStrictEqual(undefined);
+  expect(uniqueElements([1,2,3], 'zort!')).toStrictEqual(undefined);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

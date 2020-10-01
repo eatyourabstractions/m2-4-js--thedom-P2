@@ -13,6 +13,26 @@ test("Exercise 4", () => {
     )
   ).toBe(145);
   // add more tests here...
+  expect(count("howdy!")).toBe(undefined);
+  expect(
+    count(
+      [
+        {name: "goku", qi: 12000},
+        {name: "vegeta", qi: 8000},
+      ],
+      "qi"
+    )
+  ).toBe(20000);
+  expect(
+    count(
+      [
+        {name: "steve jobs", worth: 50},
+        {name: "bill", worth: 100},
+        {name: "jeff", worth: 200},
+      ],
+      "worth"
+    )
+  ).toBe(350);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

@@ -47,16 +47,20 @@ main {
   padding: 0 10px;
 }
 .frog {
+  background-image: url("../assets/frogx50.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(90deg);
   border-radius: 50%;
   color: #fff;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   position: relative;
-  left: 0;
+  left: 0px;
   transition: all ease-out 300ms;
   z-index: 1;
 }

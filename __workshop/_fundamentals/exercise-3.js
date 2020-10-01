@@ -16,7 +16,16 @@
 
 const insert = (arr, obj) => {
   // Insert missing solution please
+  if(!Array.isArray(arr)){
+    return undefined
+  }
+  return arr.map(el => ({...el, ...obj}))
 };
+
+console.log(
+  insert([{ name: "Bob" }, { name: "Josie" }], {"isAvailable": false}
+  )
+)
 
 // Part 2 - Test
 // --------------

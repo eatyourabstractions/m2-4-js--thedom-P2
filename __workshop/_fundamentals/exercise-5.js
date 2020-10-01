@@ -9,7 +9,11 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+  return nums.reduce((acc,curr) => acc + curr**2,0)
 };
+console.log(
+  addNumbers(10,100,1000)
+)
 
 // Part 2 - Test
 // --------------
